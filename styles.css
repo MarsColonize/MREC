@@ -1,5 +1,5 @@
 body {
-    background: url('assets/mars-bg.jpg') no-repeat center center fixed;
+    background: url('/mars-bg.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Orbitron', sans-serif;
     color: #ff4500;
