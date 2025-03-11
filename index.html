@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MREC - Mars Real Estate Coin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="assets/mrec-logo.png" alt="MREC Logo" class="logo">
+        <h1>🚀 MREC - The First Official Currency for Mars Colonization 🌕</h1>
+        <p>Own a piece of Mars and be part of the interplanetary revolution!</p>
+    </header>
+
+    <!-- Account Information -->
+    <section class="account-info">
+        <h2>👤 Connect Your Wallet</h2>
+        <button onclick="connectWallet()">Connect Wallet</button>
+        <p id="wallet-address">Not Connected</p>
+    </section>
+
+    <!-- Deposit Form -->
+    <section class="deposit-form">
+        <h2>💰 Deposit MREC</h2>
+        <input type="number" id="deposit-amount" placeholder="Enter amount">
+        <button onclick="depositMREC()">Deposit</button>
+    </section>
+
+    <!-- Pair Info -->
+    <section class="pair-info">
+        <h2>🔄 MREC Trading Pair</h2>
+        <p>MREC/WBNB pair is live on PancakeSwap!</p>
+        <a href="https://pancakeswap.finance" target="_blank">Trade Now</a>
+    </section>
+
+    <!-- Mars Land Ownership -->
+    <section class="mars-land">
+        <h2>🏠 Claim Your Land on Mars</h2>
+        <button onclick="claimLand()">Claim Your Land</button>
+        <p id="land-message"></p>
+    </section>
+
+    <!-- Mars Explorer -->
+    <section class="mars-explorer">
+        <h2>🌌 Mars Exploration</h2>
+        <div id="mars-images"></div>
+    </section>
+
+    <!-- Mars Live Stats -->
+    <section class="mars-stats">
+        <h2>🔥 Live Mars Stats</h2>
+        <p id="mars-weather">Fetching latest weather data...</p>
+    </section>
+
+    <!-- Governance -->
+    <section class="governance">
+        <h2>🗳 Mars Governance</h2>
+        <p>Vote on important policies for the future of Mars settlement.</p>
+        <button onclick="voteForLaw()">Vote for New Colony Law</button>
+        <p id="vote-count">Votes: 0</p>
+    </section>
+
+    <!-- Mission Information -->
+    <section class="mission-info">
+        <h2>🌕 About MREC</h2>
+        <p>MREC represents the total surface area of Mars, enabling real estate ownership and an interplanetary economy.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
