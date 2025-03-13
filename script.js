@@ -29,12 +29,12 @@ async function buyMREC(paymentMethod) {
         if (paymentMethod === 'bnb') {
             transaction = await web3.eth.sendTransaction({
                 from: userAddress,
-                to: '0xYourPresaleContractAddress',
+                to: '0x0Bb3B6f0E6c8A45cEB10d8193515544410a3B359',
                 value: web3.utils.toWei(amount, 'ether')
             });
         } else if (paymentMethod === 'usdt') {
-            const usdtContract = new web3.eth.Contract(usdtAbi, '0xUSDTContractAddress');
-            transaction = await usdtContract.methods.transfer('0xYourPresaleContractAddress', web3.utils.toWei(amount, 'mwei')).send({ from: userAddress });
+            const usdtContract = new web3.eth.Contract(usdtAbi, '0x55d398326f99059ff775485246999027b3197955');
+            transaction = await usdtContract.methods.transfer('0x0Bb3B6f0E6c8A45cEB10d8193515544410a3B359', web3.utils.toWei(amount, 'mwei')).send({ from: userAddress });
         }
         document.getElementById('purchase-status').innerText = '✅ Purchase successful!';
     } catch (error) {
